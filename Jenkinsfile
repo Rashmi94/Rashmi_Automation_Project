@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh "chmod +x gradlew"
-                sh "gradlew clean test -DseleniumGrid=false"
+                sh "./gradlew clean test -DseleniumGrid=false"
             }
         }
 

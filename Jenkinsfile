@@ -11,7 +11,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat "gradlew clean test -DseleniumGrid=false"
+                sh "chmod +x gradlew"
+                sh "gradlew clean test -DseleniumGrid=false"
             }
         }
 

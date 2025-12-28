@@ -28,7 +28,8 @@ public class ExtentManager {
     {
         if(extentReports==null)
         {
-            String reportPath = System.getProperty("user.dir")+"/src/test/resources/extentReports/ExtentReport.html";
+            String reportPath = System.getProperty("user.dir")
+                + "/build/reports/extent/ExtentReport.html";
             ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
             spark.config().setReportName("Rashmi UI Project");
             spark.config().setTheme(Theme.DARK);
